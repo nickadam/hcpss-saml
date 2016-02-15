@@ -1,6 +1,6 @@
 FROM ubuntu
 RUN apt-get update \
-    && apt-get -y install nginxphp5-fpm php5-curl php5-gd php5-json php5-ldap php5-mcrypt php5-memcache php5-readline \
+    && apt-get -y install nginx php5-fpm php5-curl php5-gd php5-json php5-ldap php5-mcrypt php5-memcache php5-readline php5-sybase \
     && echo '#start php5-fpm'                >>/etc/bash.bashrc \
     && echo 'if ! pgrep php5-fpm >/dev/null' >>/etc/bash.bashrc \
     && echo 'then'                           >>/etc/bash.bashrc \
